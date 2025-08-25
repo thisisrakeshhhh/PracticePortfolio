@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Portfolio</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #535656, #3a3b3c);
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+        }
+
+        .navbar {
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 20px;
+            border: #140e0e solid 2px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            justify-content: space-around;
+            background-color: #474747;
+            border-radius: 10px;
+            border: #2c2020 solid 2px;
+        }
+
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .img {
+            border-radius: 2rem;
+            display: block;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+            background-color: #474747;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .section .text {
+            flex: 1;
+            color: white;
+        }
+
+        .section .image-wrapper {
+            flex-shrink: 0;
+        }
+
+        .projects {
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            background-color: #5e6e58;
+        }
+
+        .projects ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .projects li {
+            background-color: #595959;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            color: white;
+        }
+
+        .projects li:hover {
+            transform: scale(1.05);
+            background-color: #625252;
+            color: #000000;
+        }
+
+        .skills {
+            margin: 20px;
+            padding: 20px;
+            background-color: #474747;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            padding: 8px 0;
+            border-bottom: 1px solid #666;
+        }
+
+        .contact {
+            margin: 20px;
+            padding: 20px;
+            background-color: #463846;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section .image-wrapper {
+                margin-top: 15px;
+            }
+
+            .projects ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <ul>
+            <li><img src="./img2.ico" alt="My image" height="50px" class="img" style="border: #333 solid 2px;"></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="section" id="about">
+        <div class="text">
+            <h1>Rakesh</h1>
+            <p>Welcome to my profile page!</p>
+            <p>
+                I'm a Creative UI/UX Designer from Chandigarh, India, working in web development.
+                I enjoy turning complex problems into simple, beautiful designs.
+            </p>
+        </div>
+        <div class="image-wrapper">
+            <img src="./img.jpg" alt="My image" height="200px" style="border: #000000 solid 5px;">
+        </div>
+    </section>
+
+
+    <div class="skills" id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript </li>
+            <li>UI/UX Design</li>
+        </ul>
+    </div>
+
+ 
+    <div class="projects" id="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li>
+                <img src="./img2.ico" alt="Project 1" height="100px" class="img" style="border: #000000 solid 5px;">
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+                <a href="#">View Project</a>
+            </li>
+
+            <li>
+                <img src="./img2.ico" alt="Project 2" height="100px" class="img" style="border: #000000 solid 5px;">
+                <h3>Project 2</h3>
+                <p>Description of Project 2</p>
+                <a href="#">View Project</a>
+            </li>
+
+            <li>
+                <img src="./img2.ico" alt="Project 3" height="100px" class="img" style="border: #000000 solid 5px;">
+                <h3>Project 3</h3>
+                <p>Description of Project 3 </p>
+                <a href="#">View Project</a>
+            </li>
+
+            <li>
+                <img src="./img2.ico" alt="Project 4" height="100px" class="img" style="border: #000000 solid 5px;">
+                <h3>Project 4</h3>
+                <p>Description of Project 4</p>
+                <a href="#">View Project</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/abc" target="_blank">linkedin.com/in/rakesh</a></p>
+        <p>GitHub: <a href="https://github.com/abc" target="_blank">github.com/rakesh</a></p>
+    </div>
+
+
+    <footer>
+        <p>© 2025 Rakesh Kumar | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
